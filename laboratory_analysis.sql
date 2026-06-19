@@ -1,5 +1,8 @@
--- PHASE 1: DATABASE ARCHITECTURE (DDL)
--- Creating the Patients Table
+-- =========================================
+-- Clinical Laboratory Database Schema
+-- Author: Janet Kufre
+-- Project: Health Data Analytics (SQL)
+-- =========================================
 CREATE TABLE Patients (
     PatientID INT PRIMARY KEY,
     FirstName VARCHAR(50),
@@ -19,7 +22,7 @@ CREATE TABLE Patients (
     OrderTimestamp TIMESTAMP,
     FOREIGN KEY (PatientID) REFERENCES Patients(PatientID))
  
---Adding the verification timestamp column to calculate TAT
+--Adding the verification timestamp column to calculate Total turn around time
 ALTER TABLE LabResults
 ADD VerifiedTimestamp DATETIME;
 
@@ -47,6 +50,9 @@ INSERT INTO Patients (PatientID, FirstName, LastName, Gender, DateOfBirth, Enrol
 (103, 'Emem', 'Bassey', 'Female', '2001-11-05', '2026-03-01'),
 (104, 'Tunde', 'Bakare', 'Male', '1978-07-30', '2026-05-12');
 
+-- =========================================
+-- Data Cleaning & Updates
+-- =========================================
 
 UPDATE Patients
 SET LastName = 'Bello-Asuquo'
