@@ -17,6 +17,3 @@ This project simulates a hospital laboratory system used to track patient tests 
 - Turnaround time varies across test types
 - Critical results require immediate attention
 - Some tests exceed SLA thresholds
-
-## Author
-Medical Laboratory Science student exploring Health Data Analytics
