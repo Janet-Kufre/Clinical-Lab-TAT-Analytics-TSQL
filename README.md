@@ -11,7 +11,7 @@ This project simulates a hospital laboratory system used to track patient tests 
 
 ## Tools Used
 - SQL (DDL, DML, Joins, Aggregations)
-- MySQL / SQL Server compatible syntax
+- SQL Server compatible syntax
 
 ## Key Insights
 - Turnaround time varies across test types
